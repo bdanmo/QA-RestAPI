@@ -2,7 +2,7 @@
   "name": "QA-RestAPI",
   "version": "1.0.0",
   "description": "Simple REST service for interfacing with a question-answer app.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/bdanmo/QA-RestAPI/issues"
   },
-  "homepage": "https://github.com/bdanmo/QA-RestAPI#readme"
+  "homepage": "https://github.com/bdanmo/QA-RestAPI#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
 }
