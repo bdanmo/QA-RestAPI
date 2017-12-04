@@ -2,8 +2,11 @@
 
 const express = require('express');
 const app = express();
+const jsonParser = require("body-parser").json;
 
 //use postman to run these routes
+
+app.use(jsonParser());
 
 app.use((req, res, next) => {
     req.myMessage = "Hello midware two! This is midware one!"
