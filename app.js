@@ -9,17 +9,7 @@ const jsonParser = require("body-parser").json;
 app.use(jsonParser());
 
 app.use((req, res, next) => {
-    req.myMessage = "Hello midware two! This is midware one!"
-    console.log(`The leaves on the tree are ${req.query.color}`);
-    next();
-});
-
-app.use('/different/:id?', (req, res, next) => { //if :id param is not given, it returns undefined
-    console.log(`Second piece of middleware { 
-    ID: ${req.params.id}.
-    Message: ${req.myMessage}
-}`
-);
+    req.body;
     next();
 });
 
